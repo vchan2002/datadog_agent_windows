@@ -1,0 +1,21 @@
+instances:
+    # The following will capture errors and warnings from SQL Server which
+    # puts all events under the MSSQLSERVER source and tag them with #sqlserver.
+    -   tags:
+        <%- Array(@tags).each do |tag| -%>
+          <%- if tag != '' -%>
+            - <%= tag %>
+          <%- end -%>
+        <%- end -%>
+        type:
+        <%- Array(@types).each do |type| -%>
+          <%- if tag != '' -%>
+            - <%= type %>
+          <%- end -%>
+        <%- end -%>
+        log_file:
+        <%- Array(@log_files).each do |log_file| -%>
+          <%- if tag != '' -%>
+            - <%= log_file %>
+          <%- end -%>
+        <%- end -%>

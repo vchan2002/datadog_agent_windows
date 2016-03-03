@@ -1,0 +1,23 @@
+    {
+      "name": "datadog_agent_windows",
+      "version": "0.0.1",
+      "author": "Victor Chan",
+      "license": "Apache-2.0",
+      "summary": "A module for a thi",
+      "source": "https://github.com/examplecorp/examplecorp-mymodule",
+      "project_page": "https://forge.puppetlabs.com/examplecorp/mymodule",
+      "issues_url": "https://github.com/examplecorp/examplecorp-mymodule/issues",
+      "tags": ["things", "stuff"],
+      "operatingsystem_support": [
+        {
+        "operatingsystem":"Windows",
+        "operatingsystemrelease":[ "5.0", "6.0" ]
+        }
+       ],
+      "dependencies": [
+        { "name": "puppetlabs/stdlib", "version_requirement": ">= 4.6.0" },
+        { "name": "puppetlabs/powershell", "version_requirement": ">= 1.0.1" }
+      ],
+      "data_provider": "null",
+      "description": "This will install the Datadog monitoring agent in windows OS"
+    }
