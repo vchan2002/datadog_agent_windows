@@ -181,8 +181,8 @@ class datadog_agent_windows (
   file { 'c:\programdata\Datadog\datadog.conf':
     ensure  => file,
     content => $agent_conf_content,
-    owner   => Administrator,
-    group   => Administrators,
+    owner   => 'Administrator',
+    group   => 'Administrators',
     require => Package[$datadog_agent_windows::params::package_name],
     notify  => Service[$datadog_agent_windows::params::service_name],
   }
